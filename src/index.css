@@ -1,20 +1,15 @@
-/* === Global Styles === */
+/* === Global Variables === */
 :root {
   --primary: #5c6aff;
   --primary-dark: #4953e0;
   --bg-light: #f0f4ff;
-  --bg-dark: #1b1e2b;
   --text-light: #2e3a59;
-  --text-dark: #f8f9ff;
   --card-bg-light: #ffffff;
-  --card-bg-dark: #23263a;
   --border-light: #cfd8ff;
-  --border-dark: #3a3f5c;
   --soft-shadow: rgba(0, 0, 0, 0.1);
-  --soft-shadow-dark: rgba(0, 0, 0, 0.3);
 }
 
-/* === Light/Dark Theme === */
+/* === Page Setup === */
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(135deg, var(--bg-light), #e3ecff);
@@ -25,35 +20,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  transition: background 0.5s ease, color 0.5s ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(135deg, var(--bg-dark), #12131d);
-    color: var(--text-dark);
-  }
-
-  .App {
-    background-color: var(--card-bg-dark);
-    box-shadow: 0 10px 25px var(--soft-shadow-dark);
-  }
-
-  .bill-input input,
-  .tip-percentage-selector select {
-    background-color: #2c2f45;
-    border-color: var(--border-dark);
-    color: #fff;
-  }
-
-  .output {
-    background-color: #2e3250;
-    color: #fff;
-  }
-
-  .reset-button button {
-    background-color: var(--primary-dark);
-  }
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* === App Container === */
@@ -110,7 +77,7 @@ select:focus {
   box-shadow: 0 0 8px rgba(92, 106, 255, 0.2);
 }
 
-/* === Output Card === */
+/* === Output Section === */
 .output {
   text-align: center;
   background-color: #f3f6ff;
